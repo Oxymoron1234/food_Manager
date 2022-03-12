@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Oxygen', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./images/inventory_mang_bkg.png);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.tableContainer {
+    background-color: rgb(255, 255, 255);
+    height: 40em;
+    width: 80%;
+    display: flex;
+    box-shadow: -7px 6px 5px -2px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: -7px 6px 5px -2px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: -7px 6px 5px -2px rgba(0, 0, 0, 0.44);
+}
+
+.tableDiv {
+    height: 100%;
+    width: 70%;
+    background-color: white;
+}
+
+.editDiv {
+    height: 100%;
+    width: 30%;
+    box-shadow: -5px -2px 5px -2px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: -5px -2px 5px -2px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: -5px -2px 5px -2px rgba(0, 0, 0, 0.44);
+}
+
+.quortsDiv {
+    width: 100%;
+    height: 30%;
+    background-color: #CEEAEC;
+}
+
+.editPannel {
+    width: 100%;
+    height: 70%;
+}
+button {
+    margin: 20px;
+  }
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+.btn-2 {
+    background: #1BAFA8;
+    /* background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%); */
+    border: none;
+    
+  }
+  .btn-2:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-2:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+ #data-body tr:nth-child(even) {
+    background-color: #A0A0A0;
+}
+.calculator-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    z-index: 99;
+    background-color: rgb(87, 87, 87);
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.8;
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  @keyframes myfirst
+  {
+      0%      {background-color: white;}
+      25%     {background-color:#EF5B34;;}
+      75%     {background-color:#EF5B34;;}
+      100%    {background-color: white;}
+  }  

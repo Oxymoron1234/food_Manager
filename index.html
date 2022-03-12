@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Food Inventory System</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tableContainer">
+            <div class="tableDiv">
+                <table class="myTable" style="width:100%; ">
+                    <thead style="background-color: #48C3D5; color: white; font-size: 1.2rem;">
+                        <tr>
+                            <th>Product</th>
+                            <th>Brand</th>
+                            <th>Type </th>
+                            <th>Weight</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-body" style="text-align:center;">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="editDiv">
+                <div class="quortsDiv" style="display:flex;">
+                    <div class="topCorner" style="height:100%; width:20%;">
+                        <img src="./images/quotation_start.png" alt="quotation_start" srcset=""
+                            style="width:30px; height: 30px; padding-left: 10px; padding-top: 10px;">
+                    </div>
+                    <div class="midiumbody" style="height:100%; width:80%; margin-top: 30px;">
+                        Today is a very beautiful day
+                    </div>
+                    <div class="rightItems" style="height:100%; width:10%;">
+                        <div class="crossDiv" style="height:80%; width:100%;">
+                            <i class="fa-solid fa-xmark"
+                                style=" color: #fff; font-size:1.2rem; margin-top:10px; cursor: pointer;"></i>
+                        </div>
+                        <div class="bottomCorner" style="height:20%; width:100%;">
+                            <img src="./images/quotation_end.png" alt="quotation_end" srcset=""
+                                style="width:20px; height: 20px; ">
+                        </div>
+                    </div>
+                </div>
+                <div class="downMenue"
+                    style="background-color: #EF5B34; height:40px; width:40px ;position:absolute; top:250px; right: 300px; border-radius: 50%; cursor:pointer; display:flex; align-items:center; justify-content:center;">
+                    <i class="fa-solid fa-chevron-down" style=" color: #fff; font-size:1.2rem;"></i>
+                </div>
+                <div class="editPannel">
+                    <div class="dataDiv" style="width:100%; height:70%; color: black; margin-top:3rem; ">
+                        <div class="upperData" style="border-bottom: 1px #ccc solid; display:flex; margin-top: 1em;">
+                            <div class="productName"
+                                style="display:flex; margin: 0.8rem; padding-left: 0.9rem; align-items:center; width:60%; border-right: 1px black solid; font-weight: 600; ">
+                                Product Name</div>
+                             <div class="brand"
+                                style="display:flex; margin: 1rem; transition: background-color 0.5s ease; transition-delay: 0.3s; color: rgb(63, 63, 63);">Brand</div>
+                        </div>
+                        <div class="lowerData" style="display:flex; margin: 1em;">
+                            <div class="type"
+                                style="display:flex; margin: 1rem; padding-right: 1rem; align-items:center;  width: 30%; border-right: 1px black solid; color: rgb(63, 63, 63); transition-delay: 0.5s ">
+                                Type</div>
+                            <div class="quantity"
+                                style="display:flex; margin: 1rem; padding-right: 2.2em; align-items:center; justify-content: center; width:30%; border-right: 1px black solid; cursor: pointer; color: rgb(63, 63, 63); transition-delay: 0.8s ">
+                                Quantity</div>
+                            <div class="weight"
+                                style="display:flex; margin: 1rem; align-items:center; justify-content: center; width:40%; color: rgb(63, 63, 63); transition-delay: 1s ">
+                                Weight</div>
+                        </div>
+                        <div class="btnContainer">
+                            <button class="custom-btn btn-2 replaceBtn " style="visibility:hidden;">Replace</button>
+                            <button class="custom-btn btn-2 addBtn ">Add new </button>
+
+                        </div>
+                    </div>
+                    <div class="micBtnDiv" style="width:100%; height:30%; display:flex; ">
+                        <button class="micBtn"
+                            style="border:none; background-color: #EF5B34; height:60px; width:60px; border-radius: 50%; cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:2.4rem; margin-left: auto; margin-right: 1rem; margin-top: auto; margin-bottom: 6rem; ">
+                            <i class="fa-solid fa-microphone" style="background-color: #EF5B34; color: white;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="calculator-grid">
+            <div class="output">
+              <input type="number" style="width: 100%; height:100%" id="current-operand" >
+            </div>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-number>0</button>
+            <button data-equals class="span-two">return</button>
+          </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
